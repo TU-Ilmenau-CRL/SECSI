@@ -7,6 +7,7 @@
 clear; close all; clc
 rng('default'); rng(0); %<-- Set seed for reproducibility
 
+addpath algorithm
 addpath utils
 
 tic;

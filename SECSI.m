@@ -127,10 +127,6 @@ function [F_est,infos] = SECSI(varargin)
 %    F. Roemer and M. Haardt, "A semi-algebraic framework for approximate
 %    CP decompositions via simultaneous matrix diagonalizations (SECSI),"
 %    Signal Processing, vol. 93, no. 9, pp. 2722-2738, 2013.
-%% Add dependencies
-addpath('utils');
-addpath('algorithm');
-
 %% Verify input using input parser
 p = inputParser;
 p.addRequired('X',@(x) isnumeric(x) && all(isfinite(x(:))));
